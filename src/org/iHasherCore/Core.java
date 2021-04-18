@@ -10,6 +10,7 @@ public class Core {
     public static void main(String[] args) {
         Path file_help = (Path) ClassLoader.getSystemResourceAsStream("resources/help");
         try {
+            assert file_help != null;
             List<String> help = Files.readAllLines(file_help, StandardCharsets.UTF_8);
             for (String s : help) {
                 System.out.println(s);

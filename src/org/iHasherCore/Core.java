@@ -12,7 +12,9 @@ public class Core {
         Path file_help = Paths.get("src/resources/help");
         try {
             List<String> help = Files.readAllLines(file_help, StandardCharsets.UTF_8);
-            System.out.println(help.get(0));
+            for (String s : help) {
+                System.out.println(s);
+            }
         } catch (IOException exception) {
             exception.printStackTrace();
         }

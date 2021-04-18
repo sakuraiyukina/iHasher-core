@@ -1,2 +1,3 @@
-Hello World
-Test
+Usage:
+java -jar iHasher-core.jar <hash_mode> <parameter>
+Try iHasher-core.jar --help for all options

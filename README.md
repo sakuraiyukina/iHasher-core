@@ -1,5 +1,5 @@
 # iHasher-core
-## Usage:
+# Usage:
 java -jar iHasher-core.jar <options> <hash algorithm> <data>
 
 options:

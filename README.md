@@ -15,6 +15,6 @@ Java -jar iHasher-core.jar <options> <hash algorithm> <data>
     --SHA-384  
     --SHA-512  
 
-##data:
+## data:
     file path or string
 

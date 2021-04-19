@@ -1,6 +1,6 @@
 # iHasher-core
-## Usage:
-`Java -jar iHasher-core.jar <options> <hash algorithm> <data>`
+Usage:
+Java -jar iHasher-core.jar <options> <hash algorithm> <data>
 
 options:  
     -f      Calculate the hash value of the file  

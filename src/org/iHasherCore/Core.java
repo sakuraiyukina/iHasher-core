@@ -7,15 +7,19 @@ import java.io.InputStreamReader;
 
 public class Core {
     public static void main(String[] args) {
-        try {
-            InputStream file_help = Core.class.getResourceAsStream("/resources/help");
-            assert file_help != null;
-            BufferedReader help = new BufferedReader(new InputStreamReader(file_help));
-            for(int i = 0; i < help.read(); i++) {
-                System.out.println(help.readLine());
+        if(args.length == 0) {
+            try {
+                InputStream file_help = Core.class.getResourceAsStream("/resources/help");
+                assert file_help != null;
+                BufferedReader help = new BufferedReader(new InputStreamReader(file_help));
+                for(int i = 0; i < help.read(); i++) {
+                    System.out.println(help.readLine());
+                }
+            } catch (IOException exception) {
+                exception.printStackTrace();
             }
-        } catch (IOException exception) {
-            exception.printStackTrace();
         }
+        //code
+
     }
 }
